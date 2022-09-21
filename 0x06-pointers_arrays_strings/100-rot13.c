@@ -7,7 +7,8 @@
  * Return: the resulting string
  */
 char *rot13(char *s)
-{ int i, j;
+{
+	int i, j;
 
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char b[] = "NOPQRSTUVWZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
@@ -18,7 +19,7 @@ char *rot13(char *s)
 		{
 			if (s[i] == a[j])
 			{
-				s[i] = b[i];
+				s[i] = b[j];
 				break;
 			}
 		}
