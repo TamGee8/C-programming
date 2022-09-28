@@ -11,7 +11,7 @@ int long_1(char *s)
 {
 	if (*s != '\0')
 	{
-		return (1 + long_l(s + 1));
+		return (1 + long_1(s + 1));
 	}
 	return (0);
 }
